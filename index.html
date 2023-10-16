@@ -5,37 +5,239 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axel Valent</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/68e046942b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Computer Science Student at BINUS University</p>
-            <h1>Hi, I'm <span>Axel Valent</span><br>from Indonesia, Jakarta</h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#"><img src="images/logoaxel.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Works</a></li>
+                    <li><a href="#Portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
         </div>
     </div>
-</div>
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/">
-            </div>
-            <div class="about-col-2">
-                <h1>About Me</h1>
+
+    <!--------------------------- intro -------------------------->
+
+    <div id="desc">
+        <div class="container">
+            <div class="row">
+                <div class="header-text">
+                    <p>Computer Science Student at BINUS University</p>
+                    <h1>Hi, I'm <span>Axel Valent</span><br>from Indonesia, Jakarta</h1>
+                </div>
+                <div class="axelpfp-col">
+                    <img src="images/axelpfptest.jpg">
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <!------------------------- about me ------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutme.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class = "small-text">I'm a communicative and self-motivated Computer Science student currently learning at BINUS University in Indonesia, Tangerang. I'm willing to learn new things and take on challenges. As such, I'm looking for an Internship opportunity to improve on my coding and my skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Communication</span><br></li>
+                            <li><span>Teamwork</span><br></li>
+                            <li><span>Personal Development</span><br></li>
+                            <li><span>Easily Adaptable</span><br></li>
+                            <li><span>Time Management</span><br></li>
+                            <li><span>Python</span><br></li>
+                            <li><span>C++ and C</span><br></li>
+                            <li><span>Java</span><br></li>
+                            <li><span>MySQL</span><br></li>
+                            <li><span>Software Project Management</span><br></li>
+                            <li><span>Computer Vision</span><br></li>
+                            <li><span>Deep Learning</span><br></li>
+                            <li><span>Artificial Intelligence</span><br></li>
+                            <li><span>Machine Learning</span><br></li>
+                            <li><span>Data Science & Analytics</span><br></li>
+                            <li><span>Web Development</span><br></li>
+                            <li><span>Game Development</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oct 2020 - Present</span><br>Content Creator, YouTube</li>
+                            <li><span>July 2023 - Present</span><br>Game Developer, Lua Programming Language, Roblox Platform</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025</span><br>BINUS University</li>
+                            <li><span>2009 - 2021</span><br>Sekolah Dian Harapan Daan Mogot</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------my works--------------------------------->
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/mlfptraintest.png">
+                    <div class="layer">
+                        <h3>Used Car Price Prediction</h3>
+                        <p>Using Linear and Random Forest Regression to predict Used Car Price based on a given dataset.</p>
+                        <a href="machinelearning.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/websitepage.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A local website to showcase projects, research, and skills.</p>
+                        <a href="web.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/rmcspaper.png">
+                    <div class="layer">
+                        <h3>Rice Yield Prediction in Sumatera Research</h3>
+                        <p>Study on Rice Yield Prediction in Sumatera where various Machine Learning Algorithms are compared in order to find out the best approach to get the highest accuracy.</p>
+                        <a href="research.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#Portfolio" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-------------------------- my projects ----------------------------->
+
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="portfolio-list">
+                <div>
+                    <a href="deeplearning.html"><i class="fa-solid fa-eye"></i>
+                        <h2>Deep Learning Projects</h2>
+                    </a>
+                </div>
+                <div>
+                    <a href="machinelearning.html"><i class="fa-solid fa-gears"></i>
+                        <h2>Machine Learning Projects</h2>
+                    </a>
+                </div>
+                <div>
+                    <a href="research.html"><i class="fa-solid fa-book"></i>
+                        <h2>Research Projects</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-list2">
+                <div>
+                    <a href="web.html"><i class="fa-solid fa-globe"></i>
+                        <h2>Web Development Projects</h2>
+                    </a>
+                </div>
+                <div>
+                    <a href="game.html"><i class="fa-solid fa-gamepad"></i>
+                        <h2>Game Development Projects</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="portfolio-list3">
+                <div>
+                    <a href="certificate.html"><i class="fa-solid fa-face-smile"></i>
+                        <h2>Certificates</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------ contact ------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> axelvalent120203@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 081319552188</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/axelvalent/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/axelvalent"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/axelvalent3/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <style>
+                    /* Select the input and textarea elements and style their placeholders */
+                    input[type="text"]::placeholder,
+                    input[type="email"]::placeholder,
+                    textarea::placeholder {
+                        color: #909090; /* Change this to the desired color */
+                    }
+                </style>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Axel. Made with <i class="fa-solid fa-heart"></i> by Axel Valent</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
