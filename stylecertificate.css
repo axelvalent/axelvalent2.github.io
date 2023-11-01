@@ -69,7 +69,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 30px;
 }
 .header-text p{
@@ -85,6 +85,7 @@ nav ul li a:hover::after{
 .header-text img{
     width: 50%;
 }
+
 .header-text p{
     padding-right: 200px;
     padding-left: 200px;
